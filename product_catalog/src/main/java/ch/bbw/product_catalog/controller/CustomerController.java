@@ -34,6 +34,6 @@ public class CustomerController {
     public ResponseEntity<String> handleDuplicateUser(DuplicateUsernameException e) {
         // Log the exception or perform additional handling if needed
         log.error(e.getMessage());
-        return new ResponseEntity<>("Username already exists. Try another one", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
     }
 }
