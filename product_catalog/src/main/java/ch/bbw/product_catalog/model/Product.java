@@ -1,5 +1,6 @@
 package ch.bbw.product_catalog.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,7 +21,13 @@ public class Product {
     private String imgLink;
     @Column(name = "name", nullable = false)
     private String name;
-
-    @ManyToMany(mappedBy = "products")
+    @Column(name = "size")
+    private String size;
+    @Column(name = "price", nullable = false)
+    private double price;
+    @Column(name = "rating")
+    private int rating;
+    @ManyToMany(mappedBy = "products", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<OrderPlacement> orders = new HashSet<>();
 }

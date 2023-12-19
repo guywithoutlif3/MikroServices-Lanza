@@ -17,7 +17,7 @@ public class CustomerService {
         try {
             customerRepository.save(customer);
         } catch (DataIntegrityViolationException e) {
-            // Check if the exception is caused by a duplicate username
+            // TODO: Fix the error of persisting orders
             if (isDuplicateUsernameException(e)) {
                 throw new DuplicateUsernameException("Username already exists.");
             } else {
