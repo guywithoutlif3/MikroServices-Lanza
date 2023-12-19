@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ed88eb6-09b0-4f50-a7a2-bbaf50f0cc27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../product_catalog/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../product_catalog/src/main/java/ch/bbw/product_catalog/config/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../product_catalog/src/main/java/ch/bbw/product_catalog/dto/LogisticOrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../warenkorb/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/../warenkorb/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../warenkorb/src/main/java/ch/bbw/warenkorb/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../warenkorb/src/main/java/ch/bbw/warenkorb/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../product_catalog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../product_catalog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../product_catalog/src/main/java/ch/bbw/product_catalog/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../product_catalog/src/main/java/ch/bbw/product_catalog/service/OrderService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2ZlNUI3BNygjeTY3ftuQRazLs91" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.LogisticProcessorApplication">
+    <configuration name="LogisticProcessorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="logistic-processor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ch.bbw.logisticprocessor.LogisticProcessorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ed88eb6-09b0-4f50-a7a2-bbaf50f0cc27" name="Changes" comment="" />
+      <created>1702992721885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702992721885</updated>
+      <workItem from="1702992722930" duration="8057000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

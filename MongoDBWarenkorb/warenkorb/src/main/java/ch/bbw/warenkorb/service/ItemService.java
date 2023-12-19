@@ -2,6 +2,7 @@ package ch.bbw.warenkorb.service;
 
 import ch.bbw.warenkorb.Item;
 import ch.bbw.warenkorb.dto.PlaceOrderDto;
+import ch.bbw.warenkorb.exceptions.ItemsNotFoundException;
 import ch.bbw.warenkorb.repositories.ItemsRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -23,8 +24,12 @@ public class ItemService {
     public Mono<PlaceOrderDto> placeOrderByCart(String customerUsername){
         log.info(customerUsername);
         List<Item> itemsToOrder = itemsRepository.findItemsByCustomerUsername(customerUsername);
-        PlaceOrderDto placeOrderDto = new PlaceOrderDto(customerUsername, itemsToOrder);
-        return callProductCatalog(placeOrderDto);
+        if(!itemsToOrder.isEmpty()){
+            PlaceOrderDto placeOrderDto = new PlaceOrderDto(customerUsername, itemsToOrder);
+            return callProductCatalog(placeOrderDto);
+        } else {
+            throw new ItemsNotFoundException("The user: " + customerUsername + " has no items in the cart. Add items");
+        }
     }
 
     private Mono<PlaceOrderDto> callProductCatalog(PlaceOrderDto placeOrderDto) {

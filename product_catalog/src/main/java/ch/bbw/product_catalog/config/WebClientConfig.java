@@ -1,4 +1,4 @@
-package ch.bbw.warenkorb.config;
+package ch.bbw.product_catalog.config;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
