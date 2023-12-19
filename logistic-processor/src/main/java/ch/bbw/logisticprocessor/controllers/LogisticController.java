@@ -9,16 +9,22 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/registerorder")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 @Slf4j
 public class LogisticController {
     private OrderProducers orderProducers;
-    @PostMapping
+    @PostMapping("/registerorder")
     public ResponseEntity<String> processOrder(@RequestBody ConfirmedOrder order){
         System.out.println("GOT REQUEST");
         log.info(order.toString());
         orderProducers.sendMessage(order);
         return ResponseEntity.ok("Order processed");
     }
+
+    @DeleteMapping("/orderdone")
+    public ResponseEntity<ConfirmedOrder> deleteProcessedOrder(@RequestBody ConfirmedOrder confirmedOrder){
+        orderProducers.sendMessageDelete(confirmedOrder);
+        return ResponseEntity.ok(confirmedOrder);
+    }
+
 }

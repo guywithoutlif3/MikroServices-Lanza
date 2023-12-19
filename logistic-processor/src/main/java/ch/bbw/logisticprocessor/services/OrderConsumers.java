@@ -28,4 +28,15 @@ public class OrderConsumers {
         }
     }
 
+    @KafkaListener(topics = "orderProcessed", groupId = "order")
+    public void listenToDeleteOrder(String message) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            ConfirmedOrder confirmedOrder = objectMapper.readValue(message, ConfirmedOrder.class);
+            log.info("Order to delete: " + confirmedOrder.toString());
+            orderRepository.delete(confirmedOrder);
+        } catch (JsonProcessingException e) {
+            log.error("Error processing message", e);
+        }
+    }
 }
