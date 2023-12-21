@@ -22,7 +22,7 @@ public class CustomerController {
         customerService.addNewCustomer(customer);
         return ResponseEntity.ok(customer);
     }
-
+    // TODO Global @ControllerAdivce class for general exceptions
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleException(Exception e) {
         // Log the exception or perform additional handling if needed

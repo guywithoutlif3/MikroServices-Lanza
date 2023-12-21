@@ -61,12 +61,11 @@ public class OrderService {
     private void callLogisticsService(LogisticOrderDto logisticOrderDto) {
         webClientBuilder.build()
                 .post()
-                .uri("http://logistic-processor:8083/registerorder")
+                .uri("http://logistic-processor:8080/registerorder")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(Mono.just(logisticOrderDto), LogisticOrderDto.class)
                 .retrieve()
                 .bodyToMono(Void.class)
                 .subscribe();
-
     }
 }
