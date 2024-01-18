@@ -3,6 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MikroServices-Lanza.iml" filepath="$PROJECT_DIR$/.idea/MikroServices-Lanza.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server-app/eureka-server-app.iml" filepath="$PROJECT_DIR$/eureka-server-app/eureka-server-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-server/gateway-server.iml" filepath="$PROJECT_DIR$/gateway-server/gateway-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logistic-processor/logistic-processor.iml" filepath="$PROJECT_DIR$/logistic-processor/logistic-processor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paypal-springboot/paypal-springboot.iml" filepath="$PROJECT_DIR$/paypal-springboot/paypal-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product_catalog/product_catalog.iml" filepath="$PROJECT_DIR$/product_catalog/product_catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/warenkorb/warenkorb.iml" filepath="$PROJECT_DIR$/warenkorb/warenkorb.iml" />
     </modules>
   </component>
 </project>
