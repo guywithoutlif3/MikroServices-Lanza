@@ -4,9 +4,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/warenkorb/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
         <option value="$PROJECT_DIR$/product_catalog/pom.xml" />
-        <option value="$PROJECT_DIR$/MongoDBWarenkorb/warenkorb/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server-app/pom.xml" />
         <option value="$PROJECT_DIR$/paypal-springboot/pom.xml" />
         <option value="$PROJECT_DIR$/logistic-processor/pom.xml" />
