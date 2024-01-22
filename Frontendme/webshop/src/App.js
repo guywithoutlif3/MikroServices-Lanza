@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from './Banner.svg'
 import TitleP from './TitleP.svg'
 import Product from './Product'; // Import the Product component
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function App() {
 
@@ -17,6 +18,17 @@ function App() {
       setCurrentRoute(route);
       window.history.pushState({}, '', route);
     };
+
+    useEffect(() => {
+      axios.get('http://localhost:8084/product-catalog/product')
+     .then(response => {
+         console.log(response.data)
+     })
+     .catch(error => {
+         console.log(error)
+     });
+
+    })
   
   return (
 
