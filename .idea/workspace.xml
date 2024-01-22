@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a184728-7a26-4bf1-9baf-679959d2c883" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway-server/src/main/java/ch/bbw/gatewayserver/GatewayConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MikroServices-Lanza.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontendme/webshop/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontendme/webshop/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontendme/webshop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontendme/webshop/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontendme/webshop/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontendme/webshop/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server-app/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server-app/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/java/ch/bbw/gatewayserver/GatewayServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/java/ch/bbw/gatewayserver/GatewayServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic-processor/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logistic-processor/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_catalog/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_catalog/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/warenkorb/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/warenkorb/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/warenkorb/src/main/java/ch/bbw/warenkorb/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/warenkorb/src/main/java/ch/bbw/warenkorb/ItemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +142,7 @@
       <workItem from="1705955429292" duration="87000" />
       <workItem from="1705955539777" duration="375000" />
       <workItem from="1705955946810" duration="813000" />
-      <workItem from="1705956766618" duration="3171000" />
+      <workItem from="1705956766618" duration="3381000" />
     </task>
     <servers />
   </component>

@@ -23,9 +23,9 @@ public class ItemController {
 
     private ItemsRepository itemsRepository;
     private final ItemService itemService;
-    @GetMapping
-    public List<Item> getCart() {
-        return itemsRepository.findAll();
+    @GetMapping("/{customerUsername}")
+    public List<Item> getCart(@PathVariable String customerUsername) {
+        return itemsRepository.findItemsByCustomerUsername(customerUsername);
     }
 
     @PostMapping
