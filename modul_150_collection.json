@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "913e4c86-dd79-48c6-a9d2-004abdf09713",
+		"name": "Modul 150",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17216978"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "add new customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"tes2t1\",\n    \"address\": \"lil street name 69\",\n    \"postalCode\": 9123,\n    \"firstname\": \"sevi\",\n    \"lastname\": \"smolders\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "Place order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerUsername\": \"test\",\n    \"products\": [\n        {\n            \"productId\": 1,\n            \"imgLink\": \"https://i0.wp.com/www.eastlondonlines.co.uk/ell_wp/wp-content/uploads/2019/03/robot-jacket.jpg?resize=750%2C422\",\n            \"name\": \"yourMom\",\n            \"rating\": 7, \n            \"price\": 22.99,\n            \"size\": \"m\"\n        },\n        {\n            \"productId\": 2,\n            \"imgLink\": \"https://i0.wp.com/www.eastlondonlines.co.uk/ell_wp/wp-content/uploads/2019/03/robot-jacket.jpg?resize=750%2C422\",\n            \"name\": \"yourMom\",\n            \"rating\": 7, \n            \"price\": 22.99,\n            \"size\": \"m\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "place order with username",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"costumerUsername\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "shopping cart",
+			"item": [
+				{
+					"name": "add items to shopping cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"productId\": 2, \n        \"imgLink\": \"https://i0.wp.com/www.eastlondonlines.co.uk/ell_wp/wp-content/uploads/2019/03/robot-jacket.jpg?resize=750%2C422\",\n        \"name\": \"big vintage\",\n        \"price\": 22.99,\n        \"rating\": 7,\n        \"size\": \"m\",\n        \"customerUsername\": \"test\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "place order with shopping cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerName\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/items/placeorder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"items",
+								"placeorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get items with customerUsername",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/items/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"items",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "kafka",
+			"item": [
+				{
+					"name": "sendmessagfe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/registerorder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"registerorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOrder",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"6581c6f4ff3d3005d12922dc\",\n    \"firstname\": \"asd\",\n    \"address\": \"sd\",\n    \"lastname\": \"test\",\n    \"postalCode\": 8898,\n    \"products\": [\n        {\n            \"productId\": 2,\n            \"imgLink\": \"https://i0.wp.com/www.eastlondonlines.co.uk/ell_wp/wp-content/uploads/2019/03/robot-jacket.jpg?resize=750%2C422\",\n            \"name\": \"big vintage\",\n            \"size\": \"m\",\n            \"price\": 22.99,\n            \"rating\": 7\n        }\n    ],\n    \"date\": \"2023-12-18T23:00:00.000Z\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/orderdone",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"orderdone"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

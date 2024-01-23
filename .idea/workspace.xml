@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a184728-7a26-4bf1-9baf-679959d2c883" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/modul_150_collection.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontendme/webshop/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontendme/webshop/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic-processor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/logistic-processor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logistic-processor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/logistic-processor/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_catalog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product_catalog/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product_catalog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product_catalog/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/warenkorb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/warenkorb/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +34,16 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2b8MkaOvy3KOHOBhhN5PlDU1ftp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -65,7 +74,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayServerApplication">
+  <component name="RunManager" selected="Spring Boot.ProductCatalog">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MikroServices-Lanza" />
       <method v="2">
@@ -98,8 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductCatalogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <configuration name="ProductCatalog" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="product_catalog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ch.bbw.product_catalog.ProductCatalogApplication" />
       <method v="2">
@@ -118,7 +126,7 @@
       <item itemvalue="Spring Boot.WarenkorbApplication" />
       <item itemvalue="Spring Boot.GatewayServerApplication" />
       <item itemvalue="Spring Boot.LogisticProcessorApplication" />
-      <item itemvalue="Spring Boot.ProductCatalogApplication" />
+      <item itemvalue="Spring Boot.ProductCatalog" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -145,7 +153,10 @@
       <workItem from="1705955429292" duration="87000" />
       <workItem from="1705955539777" duration="375000" />
       <workItem from="1705955946810" duration="813000" />
-      <workItem from="1705956766618" duration="6476000" />
+      <workItem from="1705956766618" duration="8333000" />
+      <workItem from="1706014579799" duration="1157000" />
+      <workItem from="1706016771252" duration="75000" />
+      <workItem from="1706016865701" duration="832000" />
     </task>
     <servers />
   </component>
@@ -162,5 +173,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
