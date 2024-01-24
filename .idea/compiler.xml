@@ -9,8 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gateway-server" />
         <module name="warenkorb" />
-        <module name="product_catalog" />
         <module name="logistic-processor" />
+        <module name="product_catalog" />
         <module name="paypal-springboot" />
         <module name="eureka-server-app" />
       </profile>

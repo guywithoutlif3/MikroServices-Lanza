@@ -5,18 +5,34 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner from './Banner.svg'
 import TitleP from './TitleP.svg'
 import Product from './Product'; // Import the Product component
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import Cart from './Cart';
 
 function App() {
 
     // State to manage the current route
     const [currentRoute, setCurrentRoute] = useState(window.location.pathname);
-
+    const [products, setProducts] = useState([]);
+    const [customerUsername, setCustomerUsername] = useState('test');
     // Function to handle route changes
     const handleRouteChange = (route) => {
       setCurrentRoute(route);
       window.history.pushState({}, '', route);
     };
+
+    useEffect(() => {
+      console.log(customerUsername);
+      axios.get('http://localhost:8084/product-catalog/product')
+     .then(response => {
+        setProducts(response.data)
+        console.log(response.data)
+     })
+     .catch(error => {
+         console.log(error)
+     });
+
+    }, []);
   
   return (
 
@@ -26,7 +42,7 @@ function App() {
     {/* Add more buttons or links for other routes if needed */}
     
     {/* Conditional rendering based on the current route */}
-    {currentRoute === '/Cart' && <div> Sugma </div>}
+    {currentRoute === '/Cart' && <Cart costumerUsername={customerUsername}/>}
 
     {currentRoute !== '/Cart'  && <div className="App">
       <header>
@@ -45,31 +61,18 @@ function App() {
           <br></br>
           <br></br>
           <br></br>
-          <Product
-            imageUrl="https://ih1.redbubble.net/image.4164480772.2740/ra,kids_tee,x900,FFFFFF:97ab1c12de,front-pad,750x1000,f8f8f8.jpg"
-            price={19.99}
-            name="Sample Product"
-          />
-          <Product
-            imageUrl="https://ih1.redbubble.net/image.4164480772.2740/ra,kids_tee,x900,FFFFFF:97ab1c12de,front-pad,750x1000,f8f8f8.jpg"
-            price={19.99}
-            name="Sample Product"
-          />
-          <Product
-            imageUrl="https://ih1.redbubble.net/image.4164480772.2740/ra,kids_tee,x900,FFFFFF:97ab1c12de,front-pad,750x1000,f8f8f8.jpg"
-            price={19.99}
-            name="Sample Product"
-          />
-          <Product
-            imageUrl="https://ih1.redbubble.net/image.4164480772.2740/ra,kids_tee,x900,FFFFFF:97ab1c12de,front-pad,750x1000,f8f8f8.jpg"
-            price={19.99}
-            name="Sample Product"
-          />
-          <Product
-            imageUrl="https://ih1.redbubble.net/image.4164480772.2740/ra,kids_tee,x900,FFFFFF:97ab1c12de,front-pad,750x1000,f8f8f8.jpg"
-            price={19.99}
-            name="Sample Product"
-          />
+          {products.map(product => (
+                <Product 
+                    key={product.productId}
+                    imgLink={product.imgLink}
+                    name={product.name}
+                    price={product.price}
+                    productId={product.productId}
+                    rating={product.rating}
+                    size={product.size}
+                    customerUsername={customerUsername}
+                />
+            ))}
         </div>
       </header>
     </div>}
