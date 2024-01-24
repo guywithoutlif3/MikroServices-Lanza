@@ -15,6 +15,14 @@
         <module name="eureka-server-app" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="eureka-server-app" target="17" />
+      <module name="gateway-server" target="17" />
+      <module name="logistic-processor" target="17" />
+      <module name="paypal-springboot" target="1.8" />
+      <module name="product_catalog" target="17" />
+      <module name="warenkorb" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
