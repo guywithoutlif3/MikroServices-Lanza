@@ -96,6 +96,7 @@ function App() {
               name="firstname"
               value={formData.firstname}
               onChange={handleChange}
+              required
             />
           </label>
           <br />
@@ -106,6 +107,7 @@ function App() {
               name="lastname"
               value={formData.lastname}
               onChange={handleChange}
+              required
             />
           </label>
           <br />
@@ -126,6 +128,7 @@ function App() {
               name="postalCode"
               value={formData.postalCode}
               onChange={handleChange}
+              required
             />
           </label>
           <br />
@@ -136,6 +139,7 @@ function App() {
               name="address"
               value={formData.address}
               onChange={handleChange}
+              required
             />
           </label>
           <br />
