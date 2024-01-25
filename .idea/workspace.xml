@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a184728-7a26-4bf1-9baf-679959d2c883" name="Changes" comment="" />
+    <list default="true" id="6a184728-7a26-4bf1-9baf-679959d2c883" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontendme/webshop/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontendme/webshop/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paypal-springboot/paypal-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/paypal-springboot/paypal-springboot.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

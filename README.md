@@ -41,6 +41,11 @@ Mit dem Gateway Service wurde die ganze Kommunikation auf Port 8084 verlegt. Hie
 Microservices konfiguriert und individuelle Namen dafür bereitgestellt in der Konfiguration. Zudem kann man die Security für 
 alle Endpunkte hier in der App verwalten und bestimmen. 
 
+### Paypal
+
+Paypal service wurde nicht vollständig implementiert, da die Umgebung für dev nicht vollständig implementiert ist. Aber 
+das Proof of concept ist da. 
+
 ### API dokumentation
 
 Um die API genauer anzuschauen, wurde Postman hinterlegt(modul_150_collection.json). Hierfür einfach im Postman selbst importieren.

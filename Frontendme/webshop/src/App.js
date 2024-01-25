@@ -60,17 +60,28 @@ function App() {
       data: requestData,
     };
 
-    axios
-      .request(config)
-      .then((response) => {
-        console.log(JSON.stringify(response.data));
-      })
-      .catch((error) => {
+    axios.request(config)
+    .then((response) => {
+      console.log(JSON.stringify(response.data));
+      console.log(formData.username);
+      sessionStorage.setItem('username', formData.username);
+      setTimeout(() => window.location.replace("http://localhost:3000/"), 1000);
+    })
+    .catch((error) => {
+      if (error.response && error.response.data) {
+        // Check if the error is due to the username already existing
+        if (error.response.data.message === "Username already exists") {
+          alert("Username already exists. Please try a different username.");
+        } else {
+          // Handle other types of errors
+          console.log(error.response.data.message);
+        }
+      } else {
+        // If the error does not have a response data
         console.log(error);
-      });
-      console.log(formData.username)
-      sessionStorage.setItem('username',formData.username);
-      setTimeout(window.location.replace("http://localhost:3000/"), 1000);
+      }
+    });
+
 
   };
   // ------------------------------------------------------------------
